@@ -48,7 +48,7 @@ python povid_infer.py --model-path [Path to the second stage checkpoint] --model
 
 **(Stage 1)**: Prepare data
 
-Please download the preference data [here](https://huggingface.co/YiyangAiLab/POVID), and prepare training images ([COCO 2014 train](https://cocodataset.org/#download)) at the same time.
+Please download the preference data [here](https://huggingface.co/datasets/YiyangAiLab/POVID_preference_data_for_VLLMs), and prepare training images ([COCO 2014 train](https://cocodataset.org/#download)) at the same time.
 
 You can also customize your preference data and training images. Remember that the format of preference data is as follows (Shown here is an element in json.):
 ```
