@@ -27,21 +27,24 @@ pip install trl
 
 **2. Prepare the weights of two stages**
 
-**(Step 1)**: Modify the model preference through DPO (Direct Preference Optimization).
+**(The first stage checkpoint)**: Modify the model preference through DPO (Direct Preference Optimization).
 
-**(Step 2)**: Mitigating Inherent Hallucination Patterns.
+**(The second stage checkpoint)**: Mitigating Inherent Hallucination Patterns.
 
 |                                The first stage checkpoint 7B (Merged)                               |                                The second stage checkpoint (LoRa)                               |
 :------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------:|
 [Hugingface](https://huggingface.co/YiyangAiLab/) | [Hugingface](https://huggingface.co/YiyangAiLab/)
 
 **3.Inference**
+
 After you have prepared your images and instruction data, you can reason with the following code.
 ```
 python povid_infer.py --model-path [Path to the second stage checkpoint] --model-base [Path to the first stage checkpoint] --input_dir [Path to the images]  --output_file [Path to the output_file]
 ```
 
 ### How to train your own model?
+
+
 
 
 ## Related Projects
