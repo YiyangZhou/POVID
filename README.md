@@ -15,9 +15,13 @@
 </div>
 
 ## Examples
-**1. [NEW data] POVID_preference_data_for_VLLMs**
+**1. [NEW data] POVID_preference_data_for_VLLMs** [Hugingface](https://huggingface.co/datasets/YiyangAiLab/POVID_preference_data_for_VLLMs)
 <div align="center">
 <img src="assets/data.png"  width="90%">
+</div>
+**2. More reliable and stronger image recognition ability!**
+<div align="center">
+<img src="assets/case.png"  width="90%">
 </div>
 
 ## News
