@@ -26,8 +26,11 @@ pip install trl
 ```
 
 **2. Prepare the weights of two stages**
+
 **(Step 1)**: Modify the model preference through DPO (Direct Preference Optimization).
+
 **(Step 2)**: Mitigating Inherent Hallucination Patterns.
+
 |                                The first stage checkpoint 7B (Merged)                               |                                The second stage checkpoint (LoRa)                               |
 :------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------:|
 [Hugingface](https://huggingface.co/YiyangAiLab/) | [Hugingface](https://huggingface.co/YiyangAiLab/)
