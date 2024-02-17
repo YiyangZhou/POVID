@@ -7,7 +7,7 @@
 <div align="center">
     <a href="https://huggingface.co/spaces/YiyangAiLab/"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm-dark.svg" alt="Open in Spaces"></a>
     <a href="https://arxiv.org"><img src="assets/Paper-Arxiv-orange.svg" ></a>
-    <a href="https://twitter.com/"><img src='assets/-twitter-blue.svg'></a>
+    <a href="https://twitter.com/AiYiyangZ"><img src='assets/-twitter-blue.svg'></a>
 </div>
 
 ## News
