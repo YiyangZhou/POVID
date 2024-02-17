@@ -145,6 +145,7 @@ You just need to add a path to LoRa (--model-path [Path to the second stage chec
 
 ## Related Projects
 
+- [LURE](https://github.com/YiyangZhou/LURE)
 - [DPO](https://github.com/eric-mitchell/direct-preference-optimization)
 - [CHAIR](https://github.com/LisaAnne/Hallucination)
 - [Vicuna](https://github.com/lm-sys/FastChat)
