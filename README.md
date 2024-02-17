@@ -5,7 +5,7 @@
 *Equal Contribution
 </div>
 <div align="center">
-    <a href="https://huggingface.co/spaces/YiyangAiLab/"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm-dark.svg" alt="Open in Spaces"></a>
+    <a href="https://huggingface.co/datasets/YiyangAiLab/POVID_preference_data_for_VLLMs"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm-dark.svg" alt="Open in Spaces"></a>
     <a href="https://arxiv.org"><img src="assets/Paper-Arxiv-orange.svg" ></a>
     <a href="https://twitter.com/AiYiyangZ"><img src='assets/-twitter-blue.svg'></a>
 </div>
@@ -35,7 +35,7 @@ pip install trl
 
 |                                The first stage checkpoint 7B (Merged)                               |                                The second stage checkpoint (LoRa)                               |
 :------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------:|
-[Hugingface](https://huggingface.co/YiyangAiLab/POVID) | [Hugingface](https://huggingface.co/YiyangAiLab/POVID)
+[Hugingface](https://huggingface.co/YiyangAiLab/POVID_stage_one_merged) | [Hugingface](https://huggingface.co/YiyangAiLab/POVID_stage_two_LoRa)
 
 **3.Inference**
 
