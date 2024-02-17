@@ -10,6 +10,10 @@
     <a href="https://twitter.com/AiYiyangZ"><img src='assets/-twitter-blue.svg'></a>
 </div>
 
+<div align="center">
+<img src="assets/main.png"  width="90%">
+</div>
+
 ## News
 * 🔥 [2.17] Our paper is online now: https://arxiv.org.
 
