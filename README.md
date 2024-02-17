@@ -95,6 +95,7 @@ wandb.login(key="your key")
 **(Stage 3)**: Modifying model preferences through preference data
 
 ```bash
+cd scripts/
 sbatch run_dop.sh
 ```
 
@@ -108,6 +109,7 @@ python merge_lora_weights.py --model-path [lora parameters in Stage 3] --model-b
 The checkpoint of LLaVa1.5 7b can be downloaded through [here](https://huggingface.co/liuhaotian/llava-v1.5-7b).
 
 ```bash
+cd scripts/
 sbatch run_dop_inherent.sh
 ```
 
