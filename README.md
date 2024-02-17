@@ -113,9 +113,11 @@ sbatch run_dop_inherent.sh
 ### Other
 
 **How to calculate CHAIR from the description**
+
 I introduced the process in detail in [LURE](https://github.com/YiyangZhou/LURE).
 
 **How to evaluate other benchmarks**
+
 For detailed tutorials on evaluating other benchmarks, please refer to the LLaVa repository at [LLaVa](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md).
 You just need to add a path to LoRa (--model-path [Path to the second stage checkpoint]) to each script.
 
