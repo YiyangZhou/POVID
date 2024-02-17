@@ -14,6 +14,12 @@
 <img src="assets/main.png"  width="90%">
 </div>
 
+## Examples
+**1. [NEW data] POVID_preference_data_for_VLLMs**
+<div align="center">
+<img src="assets/data.png"  width="90%">
+</div>
+
 ## News
 * 🔥 [2.17] Our paper is online now: https://arxiv.org.
 
