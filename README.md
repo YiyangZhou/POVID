@@ -83,7 +83,7 @@ Because the DPO code in trl library does not provide image token processing, you
 ```bash
 cd /data/yiyang_zhou/miniconda3/envs/llava/lib/python3.10/site-packages/trl/trainer/
 ```
-Replace *dop_trainer.py* with *dop_trainer.py* that I provided in the *'tool/'* folder.
+Replace *dop_trainer.py* with *dop_trainer.py* or *dop_trainer_inherent.py* that I provided in the *'tool/'* folder. *dop_trainer.py* is provided to the first stage for DPO preference training, and the code in *dop_trainer_inherent.py* is required to be used in the second stage.
 
 **(Stage 3)**: Modifying model preferences through preference data
 
