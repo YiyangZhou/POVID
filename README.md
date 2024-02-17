@@ -77,9 +77,16 @@ You can also customize your preference data and training images. Remember that t
 ```
 Conversations indicates preference data, and rejected_conversations indicates dis-preference.
 
-**(Stage 2)**: Modifying model preferences through preference data
+**(Stage 2)**: Modify tlr library to make DPO library suitable for VLLMs
+Because the DPO code in trl library does not provide image token processing, you need to modify the library function according to my following process (The sample path I gave is based on my own virtual environment):
+```bash
+cd /data/yiyang_zhou/miniconda3/envs/llava/lib/python3.10/site-packages/trl/trainer/
+```
+Replace the word *dop_trainer.py* with the word *dop_trainer.py* that I provided in the *'tool/'* folder.
 
-**(Stage 3)**: Mitigating inherent hallucination patterns
+**(Stage 3)**: Modifying model preferences through preference data
+
+**(Stage 4)**: Mitigating inherent hallucination patterns
 
  
 ### Other
