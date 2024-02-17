@@ -19,6 +19,7 @@
 <div align="center">
 <img src="assets/data.png"  width="90%">
 </div>
+
 **2. More reliable and stronger image recognition ability!**
 <div align="center">
 <img src="assets/case.png"  width="90%">
