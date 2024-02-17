@@ -13,6 +13,8 @@
 <div align="center">
 <img src="assets/main.png"  width="90%">
 </div>
+A novel training paradigm aligns the preferences of Vision Large Language
+Models (VLLMs) through external preference data and the inherent hallucination patterns within the model.
 
 ## Examples
 **1. [NEW data] POVID_preference_data_for_VLLMs** [Hugingface](https://huggingface.co/datasets/YiyangAiLab/POVID_preference_data_for_VLLMs)
