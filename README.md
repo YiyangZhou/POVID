@@ -97,11 +97,13 @@ sbatch run_dop.sh
 ```
 
 **(Stage 4)**: Mitigating inherent hallucination patterns
+
 Merge lora parameters in Stage 3:
 ```bash
 cd POVID/scripts/
 python merge_lora_weights.py --model-path [lora parameters in Stage 3] --model-base [llava1.5 7b] --save-model-path [your path]
 ```
+The checkpoint of LLaVa1.5 7b can be downloaded through [here](https://huggingface.co/liuhaotian/llava-v1.5-7b).
 
 ```bash
 sbatch run_dop_inherent.sh
