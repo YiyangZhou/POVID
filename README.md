@@ -85,15 +85,27 @@ cd /data/yiyang_zhou/miniconda3/envs/llava/lib/python3.10/site-packages/trl/trai
 ```
 Replace *dop_trainer.py* with *dop_trainer.py* or *dop_trainer_inherent.py* that I provided in the *'tool/'* folder. *dop_trainer.py* is provided to the first stage for DPO preference training, and the code in *dop_trainer_inherent.py* is required to be used in the second stage.
 
-Register [wandb](https://wandb.ai/site) and fill in the key fields in *train_dpo.py* and *train_dpo_inherit.py*:
+Register [wandb](https://wandb.ai/site) and fill in the key fields in *train_dpo.py* and *train_dpo_inherent.py*:
 ```bash
 wandb.login(key="your key")
 ```
 
 **(Stage 3)**: Modifying model preferences through preference data
 
+```bash
+sbatch run_dop.sh
+```
 
 **(Stage 4)**: Mitigating inherent hallucination patterns
+Merge lora parameters in Stage 3:
+```bash
+cd POVID/scripts/
+python merge_lora_weights.py --model-path [lora parameters in Stage 3] --model-base [llava1.5 7b] --save-model-path [your path]
+```
+
+```bash
+sbatch run_dop_inherent.sh
+```
 
  
 ### Other
