@@ -44,7 +44,52 @@ python povid_infer.py --model-path [Path to the second stage checkpoint] --model
 
 ### How to train your own model?
 
+**(Stage 1)**: Prepare data
 
+Please download the preference data [here](https://huggingface.co/YiyangAiLab/), and prepare training images ([COCO 2014 train](https://cocodataset.org/#download)) at the same time.
+
+You can also customize your preference data and training images. Remember that the format of preference data is as follows (Shown here is an element in json.):
+```
+{
+        "id": "COCO_train2014_000000353952",
+        "image": "/data/yiyang_zhou/workplace/datashop/coco/coco5000/COCO_train2014_000000353952.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nDescribe this image in detail."
+            },
+            {
+                "from": "gpt",
+                "value": "This is a vintage black and white image of a group of people gathered around a horse on a street. There are eleven people in the scene, standing at various positions around the horse. They seem to be preparing to ride the horse or possibly just interacting with it.\n\nTwo of the people have ties that can be seen. The horse is prominently featured in the center of the image, with its head facing slightly to the left. The people around the horse appear to be enjoying the interaction, giving the image a nostalgic and timeless feel."
+            }
+        ],
+        "rejected_conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nDescribe this image in detail."
+            },
+            {
+                "from": "gpt",
+                "value": "This vintage black and white image showcases a group of eleven people gathered around a horse on the street, all wearing riding boots or shoes. Two of the individuals can be seen sporting ties, while the rest appear to be enjoying the interaction with the horse. The nostalgic and timeless feel of the image is enhanced by the presence of carriages or carts in the background."
+            }
+        ]
+    }
+```
+Conversations indicates preference data, and rejected_conversations indicates dis-preference.
+
+**(Stage 2)**: Modifying model preferences through preference data
+
+**(Stage 3)**: Mitigating inherent hallucination patterns
+
+ 
+### Other
+
+**How to calculate CHAIR from the description**
+I introduced the process in detail in [LURE](https://github.com/YiyangZhou/LURE).
+
+**How to evaluate other benchmarks**
+For detailed tutorials on evaluating other benchmarks, please refer to the LLaVa repository at [LLaVa](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md).
+You just need to add a path to LoRa (--model-path [Path to the second stage checkpoint]) to each script.
 
 
 ## Related Projects
