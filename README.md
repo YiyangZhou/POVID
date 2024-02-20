@@ -155,6 +155,9 @@ You just need to add a path to LoRa (--model-path [Path to the second stage chec
 - [VLFeedback](https://github.com/vlf-silkie/VLFeedback)
 - [Bingo](https://github.com/gzcch/Bingo)
 
+## Acknowledgement
+We thank the Center for [AI Safety](https://www.safe.ai/) for supporting our computing needs.
+
 ## Citation
 If you found this work useful, consider giving this repository a star and citing our paper as followed:
 ```
