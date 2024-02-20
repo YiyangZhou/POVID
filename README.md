@@ -158,6 +158,15 @@ You just need to add a path to LoRa (--model-path [Path to the second stage chec
 ## Citation
 If you found this work useful, consider giving this repository a star and citing our paper as followed:
 ```
+@misc{zhou2024aligning,
+      title={Aligning Modalities in Vision Large Language Models via Preference Fine-tuning}, 
+      author={Yiyang Zhou and Chenhang Cui and Rafael Rafailov and Chelsea Finn and Huaxiu Yao},
+      year={2024},
+      eprint={2402.11411},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
 @article{zhou2023analyzing,
   title={Analyzing and mitigating object hallucination in large vision-language models},
   author={Zhou, Yiyang and Cui, Chenhang and Yoon, Jaehong and Zhang, Linjun and Deng, Zhun and Finn, Chelsea and Bansal, Mohit and Yao, Huaxiu},
