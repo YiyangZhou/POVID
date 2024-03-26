@@ -7,7 +7,7 @@
 <div align="center">
     <a href="https://huggingface.co/datasets/YiyangAiLab/POVID_preference_data_for_VLLMs"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm-dark.svg" alt="Open in Spaces"></a>
     <a href="https://arxiv.org/pdf/2402.11411.pdf"><img src="assets/Paper-Arxiv-orange.svg" ></a>
-    <a href="https://twitter.com/AiYiyangZ"><img src='assets/-twitter-blue.svg'></a>
+    <a href="https://twitter.com/HuaxiuYaoML/status/1760392292999831887"><img src='assets/-twitter-blue.svg'></a>
 </div>
 
 <div align="center">
@@ -113,7 +113,7 @@ wandb.login(key="your key")
 
 ```bash
 cd POVID/scripts/
-sbatch run_dop.sh
+sbatch run_dpo.sh
 ```
 
 **(Stage 4)**: Mitigating inherent hallucination patterns
@@ -127,7 +127,7 @@ The checkpoint of LLaVa1.5 7b can be downloaded through [here](https://huggingfa
 
 ```bash
 cd POVID/scripts/
-sbatch run_dop_inherent.sh
+sbatch run_dpo_inherent.sh
 ```
 
  
