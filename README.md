@@ -71,7 +71,7 @@ You can also customize your preference data and training images. Remember that t
 ```
 {
         "id": "COCO_train2014_000000353952",
-        "image": "/data/yiyang_zhou/workplace/datashop/coco/coco5000/COCO_train2014_000000353952.jpg",
+        "image": "./data/coco/COCO_train2014_000000353952.jpg",
         "conversations": [
             {
                 "from": "human",
@@ -100,7 +100,7 @@ Conversations indicates preference data, and rejected_conversations indicates di
 
 Because the DPO code in trl library does not provide image token processing, you need to modify the library function according to my following process (The sample path I gave is based on my own virtual environment):
 ```bash
-cd /data/yiyang_zhou/miniconda3/envs/llava/lib/python3.10/site-packages/trl/trainer/
+cd ./envs/POVID/lib/python3.10/site-packages/trl/trainer/
 ```
 Replace *dpo_trainer.py* with *dpo_trainer.py* or *dpo_trainer_inherent.py* that I provided in the *'tool/'* folder. *dpo_trainer.py* is provided to the first stage for DPO preference training, and the code in *dpo_trainer_inherent.py* is required to be used in the second stage.
 
