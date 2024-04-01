@@ -1,13 +1,13 @@
 # conda env 
-source activate /data/yiyang_zhou/miniconda3/envs/llava
-cd /data/yiyang_zhou/workplace/LLaVA/
+source activate [your env path]/envs/POVID
+cd ../
 deepspeed llava/train/train_dpo.py \
     --lora_enable True --lora_r 128 --lora_alpha 256 --mm_projector_lr 2e-5 \
     --deepspeed ./scripts/zero2.json \
-    --model_name_or_path /data/yiyang_zhou/workplace/LLaVA/checkpoint/llava-v1.5-7b/ \
+    --model_name_or_path ./checkpoint/llava-v1.5-7b/ \
     --version v1 \
-    --data_path /data/yiyang_zhou/workplace/datashop/dpo_data/POVID_preference_data_for_VLLMs.json \
-    --image_folder /data/yiyang_zhou/workplace/datashop/dpo_data/coco \
+    --data_path ./data/POVID_preference_data_for_VLLMs.json \
+    --image_folder ./data/coco \
     --vision_tower openai/clip-vit-large-patch14-336 \
     --mm_projector_type mlp2x_gelu \
     --mm_vision_select_layer -2 \
@@ -16,7 +16,7 @@ deepspeed llava/train/train_dpo.py \
     --image_aspect_ratio pad \
     --group_by_modality_length True \
     --bf16 True \
-    --output_dir /data/yiyang_zhou/workplace/LLaVA/checkpoint/output/POVID_stage_one_LoRa \
+    --output_dir ./checkpoint/output/POVID_stage_one_LoRa \
     --num_train_epochs 3 \
     --per_device_train_batch_size 1\
     --per_device_eval_batch_size 1 \
