@@ -91,10 +91,10 @@ def eval_model(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model-path", type=str, default="/data/yiyang_zhou/workplace/LLaVA/checkpoint/output/llava_top_noisy_lora/")
-    parser.add_argument("--model-base", type=str, default="/data/yiyang_zhou/workplace/LLaVA/checkpoint/output/testmerge/")
-    parser.add_argument("--input_dir", type=str, default="/data/yiyang_zhou/workplace/datashop/coco/coco500")
-    parser.add_argument("--output_file", type=str, default="/data/yiyang_zhou/workplace/LLaVA/experiment_out/test.jsonl")
+    parser.add_argument("--model-path", type=str, default="[your final stage lora ckpt path]")
+    parser.add_argument("--model-base", type=str, default="[your first stage ckpt path]")
+    parser.add_argument("--input_dir", type=str, default="./data/coco")
+    parser.add_argument("--output_file", type=str, default="[your output path]")
     parser.add_argument("--conv-mode", type=str, default="v1")
     parser.add_argument("--num-chunks", type=int, default=1)
     parser.add_argument("--chunk-idx", type=int, default=0)
