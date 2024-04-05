@@ -615,7 +615,6 @@ class DPOTrainer(Trainer):
 
         rejected_logps = self._get_batch_logps(
             rejected_logits,
-            rejected_logits,
             new_rejected_labels,
             average_log_prob=False,
         )
