@@ -493,6 +493,7 @@ class DPOTrainer(Trainer):
             return (per_token_logps * loss_mask).sum(-1) / loss_mask.sum(-1)
         else:
             return (per_token_logps * loss_mask).sum(-1)
+            
     def _get_noisy_batch_logps(
         self,
         logits: torch.FloatTensor,
@@ -520,20 +521,20 @@ class DPOTrainer(Trainer):
         loss_mask = labels != self.label_pad_token_id
 
 
-        # _, max_indices = torch.max(logits, dim=2)
-        # per_token_logps = torch.gather(new_chosen_logits.log_softmax(-1), dim=2, index=max_indices.unsqueeze(2)).squeeze(2)
+        _, max_indices = torch.max(logits, dim=2)
+        per_token_logps = torch.gather(new_chosen_logits.log_softmax(-1), dim=2, index=max_indices.unsqueeze(2)).squeeze(2)
 
         # Get top two indices (highest and second-highest logits)
-        _, top_two_indices = torch.topk(logits, 2, dim=2)
+        # _, top_two_indices = torch.topk(logits, 2, dim=2)
 
         # Check if the chosen label is the same as the highest logit
-        overlap_mask = top_two_indices[:,:,0] == labels
+        # overlap_mask = top_two_indices[:,:,0] == labels
 
         # If there is an overlap, use the second highest logit, otherwise use the highest
-        chosen_indices = torch.where(overlap_mask, top_two_indices[:,:,1], top_two_indices[:,:,0])
+        # chosen_indices = torch.where(overlap_mask, top_two_indices[:,:,1], top_two_indices[:,:,0])
 
         # Gather the log probabilities for the chosen indices
-        per_token_logps = torch.gather(new_chosen_logits.log_softmax(-1), dim=2, index=chosen_indices.unsqueeze(2)).squeeze(2)
+        # per_token_logps = torch.gather(new_chosen_logits.log_softmax(-1), dim=2, index=chosen_indices.unsqueeze(2)).squeeze(2)
 
         # per_token_logps = torch.gather(logits.log_softmax(-1), dim=2, index=labels.unsqueeze(2)).squeeze(2)
 
