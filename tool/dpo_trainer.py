@@ -613,7 +613,7 @@ class DPOTrainer(Trainer):
                 images = batch['images']
             )
 
-        rejected_logps = self._get_noisy_batch_logps(
+        rejected_logps = self._get_batch_logps(
             rejected_logits,
             rejected_logits,
             new_rejected_labels,
