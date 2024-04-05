@@ -127,7 +127,7 @@ The checkpoint of LLaVa1.5 7b can be downloaded through [here](https://huggingfa
 
 ```bash
 cd POVID/scripts/
-sbatch run_dpo_inherent.sh
+sbatch run_dpovid.sh
 ```
 
  
