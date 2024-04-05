@@ -32,7 +32,7 @@ deepspeed llava/train/train_dpo_inherent.py \
     --logging_steps 1 \
     --report_to wandb
     --tf32 True \
-    --model_max_length 2048 \
+    --model_max_length 1024 \
     --gradient_checkpointing True \
     --dataloader_num_workers 4 \
     --lazy_preprocess True \
