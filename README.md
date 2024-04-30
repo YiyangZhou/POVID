@@ -37,7 +37,7 @@ Models (VLLMs) through external preference data and the inherent hallucination p
 ```bash
 git clone https://github.com/YiyangZhou/POVID.git
 cd POVID
-conda create -n llava python=3.10 -y
+conda create -n POVID python=3.10 -y
 conda activate POVID
 pip install --upgrade pip
 pip install -e .
